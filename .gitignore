@@ -1,0 +1,27 @@
+# Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment Variables
+.env
+
+# VS Code Settings
+.vscode/
+
+# macOS Files
+.DS_Store
+
+# Windows Files
+Thumbs.db
+
+# PyMuPDF Cache (if created)
+*.log
+
+# Python Distribution Files
+build/
+dist/
+*.egg-info/

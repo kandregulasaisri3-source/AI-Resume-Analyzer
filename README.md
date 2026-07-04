@@ -1,109 +1,67 @@
-# 🤖 AI Resume Analyzer
+# AI Resume Analyzer
 
-An AI-powered Resume Analyzer that evaluates resumes against a job description, provides an ATS compatibility score, identifies missing skills, and suggests improvements to increase the chances of getting shortlisted.
+## Overview
+AI Resume Analyzer is a Python-based application that analyzes resumes in PDF format without using any API keys. It extracts resume text, identifies technical skills, calculates a resume score, and provides suggestions to improve the resume.
 
-## 🚀 Features
+## Features
+- PDF resume parsing
+- Skill extraction
+- Resume scoring
+- Resume improvement suggestions
+- Offline processing (No API required)
 
-- 📄 Upload Resume (PDF)
-- 💼 Enter Job Description
-- 🤖 AI-based Resume Analysis
-- 📊 ATS Compatibility Score
-- 🛠️ Skill Gap Identification
-- 💡 Resume Improvement Suggestions
-- 📥 Download Analysis Report
-- 🌐 Simple and User-Friendly Interface
-
-## 🛠️ Technologies Used
-
+## Technologies Used
 - Python
-- Streamlit
-- Google Gemini API
-- PyPDF2
-- LangChain
-- Prompt Engineering
-- Git & GitHub
+- PyMuPDF
+- Regular Expressions (Regex)
 
-## 📂 Project Structure
-
+## Project Structure
 ```
-AI-Resume-Analyzer/
+AI_Resume_Analyzer/
+│── app.py
+│── skills.py
+│── requirements.txt
+│── README.md
+│── .gitignore
+│── sample_resume.pdf
 │
-├── app.py
-├── agent.py
-├── utils.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── assets/
+└── src/
+    ├── resume_parser.py
+    ├── analyzer.py
+    └── utils.py
 ```
 
-## ⚙️ Installation
+## Installation
 
-1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/AI-Resume-Analyzer.git
+1. Clone the repository.
+2. Install the required packages:
 ```
-
-2. Navigate to the project folder
-
-```bash
-cd AI-Resume-Analyzer
-```
-
-3. Install dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
-4. Add your Gemini API Key
+## Run the Project
 
-Create a `.env` file and add:
-
-```env
-GOOGLE_API_KEY=YOUR_API_KEY
+```
+python app.py
 ```
 
-5. Run the application
+## How It Works
 
-```bash
-streamlit run app.py
-```
+1. Upload or provide a PDF resume.
+2. The parser extracts text from the resume.
+3. The analyzer detects skills.
+4. The application calculates a resume score.
+5. Suggestions are displayed to improve the resume.
 
-## 📖 How It Works
+## Future Enhancements
 
-1. Upload your resume in PDF format.
-2. Paste the job description.
-3. Click **Analyze Resume**.
-4. The AI compares the resume with the job description.
-5. View the ATS score, missing skills, strengths, weaknesses, and improvement suggestions.
+- OCR support for scanned resumes.
+- Job description matching.
+- Resume keyword optimization.
+- Web-based interface using Streamlit.
 
-## 🎯 Use Cases
+## Author
 
-- Students preparing for placements
-- Job seekers
-- Resume optimization
-- ATS compatibility checking
-- Career guidance
-
-## 🔒 Security
-
-API keys and sensitive files are excluded using `.gitignore`. Never upload your API keys or virtual environment (`venv`) to GitHub.
-
-## 📸 Screenshots
-
-Add screenshots of the application here.
-
-## 👩‍💻 Author
-
-**Sai Sri**
-
-Computer Science & Data Science Engineering
-
+Sai Sri
+B.Tech – Computer Science and Data Science Engineering
 Dadi Institute of Engineering and Technology
-
-## 📄 License
-
-This project is developed for educational and learning purposes.# AI-Resume-Analyzer
-AI-Powered Resume Analyzer
