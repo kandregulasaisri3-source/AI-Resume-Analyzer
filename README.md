@@ -73,9 +73,3 @@ Sai Sri
 Computer Science and Data Science Engineering
 
 Dadi Institute of Engineering and Technology
-
-GEMINI_API_KEY=YOUR_API_KEY
-
-4. Run:
-
-streamlit run app.py
