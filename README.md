@@ -72,14 +72,7 @@ Sai Sri
 
 Computer Science and Data Science Engineering
 
-Dadi Institute of Engineering and Technology## Setup
-
-1. Clone the repository.
-2. Install the dependencies:
-
-pip install -r requirements.txt
-
-3. Create a .env file:
+Dadi Institute of Engineering and Technology
 
 GEMINI_API_KEY=YOUR_API_KEY
 
